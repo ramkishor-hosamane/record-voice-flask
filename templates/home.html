@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    i {
+        font-size: 1.2rem;
+
+    }
+
+    .button-text {
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: capitalize;
+
+    }
+
+    .card-body .row {
+        margin-bottom: 20px;
+    }
+</style>
+<div class="container">
+
+    <div style="padding: 10px 0px;">
+
+        <div class="card">
+            <h5 class="card-header txt-center">Recorder</h5>
+            <div class="card-body">
+
+
+                <!--Recorder-->
+
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <button id="record_btn" class="btn btn-primary btn-sm"> <span class="button-text">Record</span>
+                            &nbsp;&nbsp;&nbsp;
+                            <i id="btn-icon" class="fa fa-microphone"></i>
+                            <div id="loading" class="spinner-grow spinner-grow-sm text-danger" role="status">
+                                <span class="sr-only">Loading...</span>
+
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!--Media player-->
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        
+                        
+                            <div id="processing" class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+
+                    </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}
